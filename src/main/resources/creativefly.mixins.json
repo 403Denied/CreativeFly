@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"package": "com.denied403.creativefly.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [],
+	"client": [
+		"MixinFlySpeed",
+		"PlayerInventoryMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
