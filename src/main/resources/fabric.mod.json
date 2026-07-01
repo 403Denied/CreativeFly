@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "creativefly",
+	"version": "${version}",
+	"name": "Creative Fly",
+	"description": "Fly faster in creative",
+	"authors": [
+		"403Denied",
+		"TheEvilM"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/creativefly",
+		"sources": "https://github.com/403denied/creativefly"
+	},
+	"license": "MIT",
+	"icon": "assets/creativefly/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.denied403.creativefly.CreativeFly"
+		],
+		"modmenu": [
+			"com.denied403.creativefly.config.ModMenuApiImpl"
+		]
+	},
+	"mixins": [
+		"creativefly.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
