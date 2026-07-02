@@ -1,19 +1,17 @@
 package com.denied403.creativefly;
 
+import com.denied403.creativefly.config.Configs;
+import com.denied403.creativefly.event.KeyInputHandler;
+import me.shedaniel.autoconfig.AutoConfig;
+import me.shedaniel.autoconfig.ConfigHolder;
+import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.api.ModInitializer;
-
-import net.minecraft.resources.Identifier;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class CreativeFly implements ClientModInitializer {
-	public static final Logger LOGGER = LoggerFactory.getLogger("Creative Fly");
 	private static ConfigHolder<Configs> configHolder;
 
 	public static Configs getConfig(){
-		return (Configs)configHolder.getConfig();
+		return configHolder.getConfig();
 	}
 
 	public static boolean isConfigNotLoaded() {

@@ -1,0 +1,10 @@
+{
+  "key.category.creativefly.creativefly": "Creative fly",
+  "key.creativefly.toggle_fly": "Быстрый полёт",
+  "text.creative_fly.message.creativefly.text": "Быстрый полёт",
+  "text.creative_fly.message.creativefly.enabled": " Вкл",
+  "text.creative_fly.message.creativefly.disabled": " Выкл",
+  "text.creative_fly.message.creativefly.speed": " Скорость: ",
+  "text.autoconfig.creative_fly.option.toggledFlySpeed" : "Скорость",
+  "text.autoconfig.creative_fly.title": "Creative Fly"
+}
