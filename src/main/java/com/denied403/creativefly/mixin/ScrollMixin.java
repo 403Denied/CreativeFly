@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(value=MouseHandler.class)
-public class PlayerInventoryMixin {
+public class ScrollMixin {
     @Inject(method="onScroll", at=@At(value="HEAD"), cancellable = true)
     private void scrollFlySpeed(long handle, double xoffset, double yoffset, CallbackInfo ci) {
         if(CreativeFlyOptions.getIsSpeedControl()){
