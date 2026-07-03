@@ -11,10 +11,6 @@ public class Configs implements ConfigData {
     @ConfigEntry.BoundedDiscrete(min=5L, max=100L)
     private int toggledFlySpeed = 50;
 
-    private float ensureRange(float value, float min, float max) {
-        return Math.clamp(value, min, max);
-    }
-
     public boolean isCreativeFlyToggled() {
         return this.creativeFlyToggled;
     }
@@ -33,11 +29,11 @@ public class Configs implements ConfigData {
 
     public float getToggledFlySpeed() {
         float flySpeed = this.toggledFlySpeed / 100.0f;
-        return this.ensureRange(flySpeed, this.getMinFlySpeed(), this.getMaxFlySpeed());
+        return Math.clamp(flySpeed, this.getMinFlySpeed(), this.getMaxFlySpeed());
     }
 
     public void setToggledFlySpeed(float speed) {
-        float flySpeed = this.ensureRange(speed, this.getMinFlySpeed(), this.getMaxFlySpeed());
+        float flySpeed = Math.clamp(speed, this.getMinFlySpeed(), this.getMaxFlySpeed());
         this.toggledFlySpeed = Math.round(flySpeed * 100.0f);
     }
 
