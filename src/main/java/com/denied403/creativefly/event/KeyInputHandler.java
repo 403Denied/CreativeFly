@@ -32,7 +32,7 @@ public class KeyInputHandler {
     }
 
     public static void register() {
-        toggleFlyKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(KEY_TOGGLE_FLY, InputConstants.Type.KEYSYM, 74, KeyMapping.Category.register(Identifier.fromNamespaceAndPath("creativefly", KEY_CATEGORY_CREATIVEFLY))));
+        toggleFlyKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(KEY_TOGGLE_FLY, InputConstants.Type.KEYBOARD, 74, KeyMapping.Category.register(Identifier.fromNamespaceAndPath("creativefly", KEY_CATEGORY_CREATIVEFLY))));
         KeyInputHandler.registerKeyInputs();
     }
 }
